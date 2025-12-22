@@ -4,62 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NextZen Technos</title>
+
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
+      line-height: 1.7;
       color: #e5e7eb;
-      background: linear-gradient(135deg, #020617, #020617);
+      background: #020617;
     }
 
+    /* HEADER */
     header {
-      background: #020617;
-      color: #ffffff;
-      padding: 1rem 2.5rem;
+      padding: 1.2rem 2.5rem;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       border-bottom: 1px solid #1e293b;
     }
 
     .logo {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
       font-size: 1.4rem;
-      font-weight: 600;
-    }
-
-    .logo img {
-      height: 42px;
+      font-weight: 700;
+      color: #f97316;
     }
 
     nav ul {
       list-style: none;
       display: flex;
-      gap: 2rem;
-      margin: 0;
+      gap: 1.5rem;
       padding: 0;
+      margin: 0;
     }
 
     nav a {
-      color: #e5e7eb;
       text-decoration: none;
+      color: #e5e7eb;
       font-weight: 700;
       letter-spacing: 0.08em;
       padding: 0.5rem 1.2rem;
       border-radius: 999px;
-      transition: background 0.3s ease, color 0.3s ease;
-    }
-
-    nav a {
-      color: #e5e7eb;
-      text-decoration: none;
-      font-weight: 500;
-      padding: 0.4rem 0.9rem;
-      border-radius: 999px;
-      transition: background 0.3s ease, color 0.3s ease;
+      transition: background 0.3s ease;
     }
 
     nav a:hover {
@@ -67,30 +52,42 @@
       color: #020617;
     }
 
+    /* SECTIONS */
     section {
       padding: 5rem 2rem;
       max-width: 1100px;
       margin: auto;
     }
 
-    section h2 {
-      margin-bottom: 1rem;
+    h2 {
+      text-align: center;
+      font-size: 2.6rem;
+      letter-spacing: 0.08em;
       color: #f97316;
-      font-size: 2rem;
+      margin-bottom: 1.5rem;
     }
 
+    p {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      color: #94a3b8;
+    }
+
+    /* CARDS */
     .services {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 2rem;
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
 
     .service-card {
       background: #020617;
       border: 1px solid #1e293b;
-      border-radius: 14px;
-      padding: 2rem;
+      border-radius: 16px;
+      padding: 2.5rem;
+      text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -99,27 +96,43 @@
       box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     }
 
+    .service-card div {
+      font-size: 42px;
+      margin-bottom: 1rem;
+      color: #f97316;
+    }
+
+    /* CONTACT */
+    #contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
     .contact-form {
-      max-width: 700px;
+      max-width: 720px;
       width: 100%;
-      margin-top: 2.5rem;
+      margin-top: 3rem;
       background: #020617;
       padding: 3.5rem;
-      border-radius: 20px;
+      border-radius: 22px;
       border: 1px solid #1e293b;
     }
 
     .contact-form label {
-      font-size: 0.9rem;
+      display: block;
+      text-align: left;
+      margin-bottom: 0.3rem;
       color: #cbd5f5;
+      font-size: 0.9rem;
     }
 
     .contact-form input,
     .contact-form textarea {
       width: 100%;
       padding: 1.1rem;
-      margin-top: 0.6rem;
-      margin-bottom: 1.6rem;
+      margin-bottom: 1.5rem;
       border-radius: 12px;
       border: 1px solid #1e293b;
       background: #020617;
@@ -135,161 +148,132 @@
 
     .contact-form button {
       width: 100%;
-      padding: 1.1rem;
+      padding: 1.2rem;
       background: #f97316;
       border: none;
       border-radius: 14px;
       color: #020617;
       font-size: 1.1rem;
-      font-weight: 600;
+      font-weight: 700;
       cursor: pointer;
-      transition: background 0.3s ease, transform 0.2s ease;
     }
 
-    .contact-form button:hover {
-      background: #fb923c;
-    }
-
+    /* FOOTER */
     footer {
-      background: #020617;
-      color: #94a3b8;
-      text-align: center;
-      padding: 2rem;
       border-top: 1px solid #1e293b;
+      padding: 3rem 2rem;
+      text-align: center;
     }
+
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .footer-social a {
+      padding: 0.7rem 1.3rem;
+      border-radius: 999px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+    }
+
+    .wa { background:#22c55e; color:#020617; }
+    .ig { background:#ef4444; color:#fff; }
+    .li { background:#2563eb; color:#fff; }
+    .call { background:#fff; color:#020617; }
+
   </style>
 </head>
 
-  <script>
-  function showThankYou() {
-    setTimeout(() => {
-      document.querySelector(".contact-form").style.display = "none";
-      document.getElementById("thankyou-message").style.display = "block";
-    }, 500);
-  }
-</script>
-
 <body>
 
-  <header>
-    <div class="logo">
-      <span>NextZen Technos</span>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#contact">CONTACT US</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <div class="logo">NextZen Technos</div>
+  <nav>
+    <ul>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <section id="about" style="text-align:center;">
-    <h2 style="font-size:2.5rem; letter-spacing:0.08em;">ABOUT US</h2>
-    <p>
-      NextZen Technos is a technology-focused organization committed to empowering individuals and businesses through innovation, learning, and secure digital solutions. We believe in connecting people, building skills, and leading the future of technology with integrity and excellence.
-    </p>
-  </section>
+<section id="about">
+  <h2>ABOUT US</h2>
+  <p>
+    NextZen Technos empowers individuals and businesses through innovation,
+    learning, and secure digital solutions — connecting people, building skills,
+    and leading the future of technology.
+  </p>
+</section>
 
-  <section id="why-choose-us">
-    <h2 style="text-align:center;">WHY CLIENTS CHOOSE US</h2>
-    <p style="text-align:center; max-width:700px; margin:0 auto 3rem; color:#94a3b8;">Trusted by clients for quality, reliability, and results.</p>
+<section>
+  <h2>WHY CLIENTS CHOOSE US</h2>
+  <div class="services">
+    <div class="service-card"><div>✔️</div><h3>Vetted Talent</h3><p>Pre-screened experts with proven track records.</p></div>
+    <div class="service-card"><div>🛡️</div><h3>Quality Guarantee</h3><p>Rigorous QA on every project.</p></div>
+    <div class="service-card"><div>🎧</div><h3>Dedicated Support</h3><p>24/7 project and customer support.</p></div>
+    <div class="service-card"><div>⏱️</div><h3>On-Time Delivery</h3><p>Delivered within timeline and budget.</p></div>
+  </div>
+</section>
 
-    <div class="services">
-      <div class="service-card" style="text-align:center;">
-        <div style="font-size:40px; color:#f97316;">✔️</div>
-        <h3>Vetted Talent</h3>
-        <p>Access pre-screened experts with proven track records.</p>
-      </div>
-      <div class="service-card" style="text-align:center;">
-        <div style="font-size:40px; color:#f97316;">🛡️</div>
-        <h3>Quality Guarantee</h3>
-        <p>Rigorous testing and quality assurance on every project.</p>
-      </div>
-      <div class="service-card" style="text-align:center;">
-        <div style="font-size:40px; color:#f97316;">🎧</div>
-        <h3>Dedicated Support</h3>
-        <p>24/7 project management and customer support.</p>
-      </div>
-      <div class="service-card" style="text-align:center;">
-        <div style="font-size:40px; color:#f97316;">⏱️</div>
-        <h3>On-Time Delivery</h3>
-        <p>Projects completed within agreed timelines and budget.</p>
-      </div>
-    </div>
-  </section>
+<section id="contact">
+  <h2>CONTACT US</h2>
 
-  <section id="freelancers">
-    <h2 style="text-align:center;">WHY FREELANCERS LOVE US</h2>
-    <p style="text-align:center; max-width:700px; margin:0 auto 3rem; color:#94a3b8;">Empowering professionals to grow and succeed.</p>
+  <iframe name="hidden_iframe" style="display:none;"></iframe>
 
-    <div class="services">
-      <div class="service-card" style="text-align:center;">
-        <div style="font-size:40px; color:#f97316;">💰</div>
-        <h3>Competitive Pay</h3>
-        <p>Fair rates that match your expertise and experience.</p>
-      </div>
-      <div class="service-card" style="text-align:center;">
-        <div style="font-size:40px; color:#f97316;">📂</div>
-        <h3>Quality Projects</h3>
-        <p>Work on diverse, challenging projects from reputable clients.</p>
-      </div>
-      <div class="service-card" style="text-align:center;">
-        <div style="font-size:40px; color:#f97316;">🕒</div>
-        <h3>Flexible Schedule</h3>
-        <p>Choose when and where you work to maintain work-life balance.</p>
-      </div>
-      <div class="service-card" style="text-align:center;">
-        <div style="font-size:40px; color:#f97316;">📈</div>
-        <h3>Career Growth</h3>
-        <p>Continuous learning opportunities and skill development.</p>
-      </div>
-    </div>
-  </section>
+  <form class="contact-form"
+        action="https://formsubmit.co/nextzentechnos@gmail.com"
+        method="POST"
+        target="hidden_iframe"
+        onsubmit="showThankYou()">
 
-  <section id="contact" style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;">
-    <h2 style="width:100%; font-size:2.5rem; letter-spacing:0.08em;">CONTACT US</h2>
-    <form class="contact-form" action="https://formsubmit.co/nextzentechnos@gmail.com" method="POST" onsubmit="showThankYou()">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_subject" value="New Contact Message - NextZen Technos">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" value="">
+    <input type="hidden" name="_captcha" value="false">
 
-      <p>
-        <label>Name</label>
-        <input type="text" name="name" placeholder="Your full name" required />
-      </p>
-      <p>
-        <label>Email</label>
-        <input type="email" name="email" placeholder="your@email.com" required />
-      </p>
-      <p>
-        <label>Message</label>
-        <textarea name="message" rows="5" placeholder="Write your message here..." required></textarea>
-      </p>
-      <button type="submit">Send Message</button>
-    </form>
-    <p id="thankyou-message" style="display:none; margin-top:1.5rem; font-size:1.2rem; color:#22c55e; font-weight:600;">
-      Thank you. Your message is successfully sent.
-    </p>
-  </section>
+    <label>Name</label>
+    <input type="text" name="name" required>
 
-  <footer>
-<div style="max-width:1100px; margin:auto; display:flex; flex-direction:column; gap:1.0rem; align-items:center;">
-<h1 style="margin:0; color:#f97316;">NextZen Technos</h1>
-<h3 style="margin:0; color:#94a3b8; text-align:center;">Connect. Learn. Build. Lead.</h3>
+    <label>Email</label>
+    <input type="email" name="email" required>
 
+    <label>Message</label>
+    <textarea name="message" rows="5" required></textarea>
 
-<div class="footer-social" style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; margin-top:1.5rem;">
-<a href="https://wa.me/91XXXXXXXXXX" target="_blank" style="background:#22c55e; color:#020617; padding:0.7rem 1.2rem; border-radius:999px; font-weight:600; display:flex; align-items:center; gap:0.5rem; text-decoration:none;">💬 WhatsApp</a>
-<a href="https://www.instagram.com/" target="_blank" style="background:#ef4444; color:#ffffff; padding:0.7rem 1.2rem; border-radius:999px; font-weight:600; display:flex; align-items:center; gap:0.5rem; text-decoration:none;">📸 Instagram</a>
-<a href="https://www.linkedin.com/" target="_blank" style="background:#2563eb; color:#ffffff; padding:0.7rem 1.2rem; border-radius:999px; font-weight:600; display:flex; align-items:center; gap:0.5rem; text-decoration:none;">💼 LinkedIn</a>
-<a href="tel:+91XXXXXXXXXX" style="background:#ffffff; color:#020617; padding:0.7rem 1.2rem; border-radius:999px; font-weight:600; display:flex; align-items:center; gap:0.5rem; text-decoration:none;">📞 Call Us</a>
-</div>
+    <button type="submit">Send Message</button>
+  </form>
 
+  <p id="thankyou-message" style="display:none; margin-top:2rem; color:#22c55e; font-size:1.2rem; font-weight:600;">
+    Thank you. Your message is successfully sent.
+  </p>
+</section>
 
-<p style="margin-top:1.5rem; font-size:0.85rem; color:#64748b;">© 2025 NextZen Technos. All rights reserved.</p>
-</div>
+<footer>
+  <h1 style="color:#f97316;">NextZen Technos</h1>
+  <p>Connect. Learn. Build. Lead.</p>
+
+  <div class="footer-social">
+    <a class="wa" href="#">💬 WhatsApp</a>
+    <a class="ig" href="#">📸 Instagram</a>
+    <a class="li" href="#">💼 LinkedIn</a>
+    <a class="call" href="#">📞 Call Us</a>
+  </div>
+
+  <p style="margin-top:2rem; font-size:0.85rem;">© 2025 NextZen Technos</p>
 </footer>
+
+<script>
+function showThankYou() {
+  setTimeout(() => {
+    document.querySelector(".contact-form").style.display = "none";
+    document.getElementById("thankyou-message").style.display = "block";
+  }, 500);
+}
+</script>
 
 </body>
 </html>
