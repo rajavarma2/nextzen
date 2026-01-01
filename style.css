@@ -194,6 +194,31 @@ footer {
 #events .service-card {
   border-left: 4px solid #f97316;
 }
+/* FOUNDER SOCIAL – SAME AS FOOTER BUTTONS */
+.founder-social {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.founder-social .social-btn {
+  padding: 0.6rem 1.3rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.founder-social .social-btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
 
 /* FOUNDERS */
 .founder-card img {
