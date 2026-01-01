@@ -5,190 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NextZen Technos</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.7;
-      color: #e5e7eb;
-      background: #020617;
-    }
-
-    /* HEADER */
-    header {
-      padding: 1.2rem 2.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #1e293b;
-    }
-
-    .logo {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: #f97316;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      padding: 0;
-      margin: 0;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #e5e7eb;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      padding: 0.5rem 1.2rem;
-      border-radius: 999px;
-      transition: background 0.3s ease;
-    }
-
-    nav a:hover {
-      background: #f97316;
-      color: #020617;
-    }
-
-    /* SECTIONS */
-    section {
-      padding: 5rem 2rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h2 {
-      text-align: center;
-      font-size: 2.6rem;
-      letter-spacing: 0.08em;
-      color: #f97316;
-      margin-bottom: 1.5rem;
-    }
-
-    p {
-      text-align: center;
-      max-width: 800px;
-      margin: auto;
-      color: #94a3b8;
-    }
-
-    /* CARDS */
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
-      margin-top: 3rem;
-    }
-
-    .service-card {
-      background: #020617;
-      border: 1px solid #1e293b;
-      border-radius: 16px;
-      padding: 2.5rem;
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .service-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    }
-
-    .service-card div {
-      font-size: 42px;
-      margin-bottom: 1rem;
-      color: #f97316;
-    }
-
-    /* CONTACT */
-    #contact {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .contact-form {
-      max-width: 720px;
-      width: 100%;
-      margin-top: 3rem;
-      background: #020617;
-      padding: 3.5rem;
-      border-radius: 22px;
-      border: 1px solid #1e293b;
-    }
-
-    .contact-form label {
-      display: block;
-      text-align: left;
-      margin-bottom: 0.3rem;
-      color: #cbd5f5;
-      font-size: 0.9rem;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 1.1rem;
-      margin-bottom: 1.5rem;
-      border-radius: 12px;
-      border: 1px solid #1e293b;
-      background: #020617;
-      color: #e5e7eb;
-      font-size: 1rem;
-    }
-
-    .contact-form input:focus,
-    .contact-form textarea:focus {
-      outline: none;
-      border-color: #f97316;
-    }
-
-    .contact-form button {
-      width: 100%;
-      padding: 1.2rem;
-      background: #f97316;
-      border: none;
-      border-radius: 14px;
-      color: #020617;
-      font-size: 1.1rem;
-      font-weight: 700;
-      cursor: pointer;
-    }
-
-    /* FOOTER */
-    footer {
-      border-top: 1px solid #1e293b;
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-
-    .footer-social {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-
-    .footer-social a {
-      padding: 0.7rem 1.3rem;
-      border-radius: 999px;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      text-decoration: none;
-    }
-
-    .wa { background:#22c55e; color:#020617; }
-    .ig { background:#ef4444; color:#fff; }
-    .li { background:#2563eb; color:#fff; }
-    .call { background:#fff; color:#020617; }
-
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -198,63 +16,100 @@
   <nav>
     <ul>
       <li><a href="#about">ABOUT</a></li>
-      <li><a href="#contact">CONTACT US</a></li>
+      <li><a href="#programs">PROGRAMS</a></li>
+      <li><a href="#founders">FOUNDERS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
     </ul>
   </nav>
 </header>
 
+<!-- ABOUT -->
 <section id="about">
   <h2>ABOUT US</h2>
   <p>
-    NextZen Technos empowers individuals and businesses through innovation,
-    learning, and secure digital solutions connecting people, building skills,
-    and leading the future of technology.
+    NextZen Technos empowers individuals through technology, communication,
+    and digital growth skills to build successful careers and brands.
   </p>
 </section>
 
-<section>
-  <h2>WHY CLIENTS CHOOSE US</h2>
-  <div class="services">
-    <div class="service-card"><div>✔️</div><h3>Vetted Talent</h3><p>Pre-screened experts with proven track records.</p></div>
-    <div class="service-card"><div>🛡️</div><h3>Quality Guarantee</h3><p>Rigorous QA on every project.</p></div>
-    <div class="service-card"><div>🎧</div><h3>Dedicated Support</h3><p>24/7 project and customer support.</p></div>
-    <div class="service-card"><div>⏱️</div><h3>On-Time Delivery</h3><p>Delivered within timeline and budget.</p></div>
-  </div>
-</section>
-  <section id="freelancers">
-  <h2>WHY FREELANCERS LOVE US</h2>
-  <p style="text-align:center; max-width:700px; margin:0 auto 3rem; color:#94a3b8;">
-    Empowering professionals to grow, earn, and succeed.
-  </p>
+<!-- PROGRAMS -->
+<section id="programs">
+  <h2>OUR PROGRAMS</h2>
 
   <div class="services">
+    <!-- Programming -->
     <div class="service-card">
-      <div style="font-size:42px;">💰</div>
-      <h3>Competitive Pay</h3>
-      <p>Fair rates that match your expertise and experience.</p>
+      <h3>C Programming</h3>
+      <p>Strong foundation in logic and core programming.</p>
+      <a href="https://example.com/apply-c" class="apply-btn">Apply</a>
     </div>
 
     <div class="service-card">
-      <div style="font-size:42px;">📂</div>
-      <h3>Quality Projects</h3>
-      <p>Work on diverse, challenging projects from reputable clients.</p>
+      <h3>JavaScript</h3>
+      <p>Modern JS for web development and applications.</p>
+      <a href="https://example.com/apply-js" class="apply-btn">Apply</a>
     </div>
 
     <div class="service-card">
-      <div style="font-size:42px;">🕒</div>
-      <h3>Flexible Schedule</h3>
-      <p>Choose when and where you work to maintain work-life balance.</p>
+      <h3>Python</h3>
+      <p>Automation, data, and backend development.</p>
+      <a href="https://example.com/apply-python" class="apply-btn">Apply</a>
     </div>
 
     <div class="service-card">
-      <div style="font-size:42px;">📈</div>
-      <h3>Career Growth</h3>
-      <p>Continuous learning opportunities and skill development.</p>
+      <h3>Node.js</h3>
+      <p>Backend development with real projects.</p>
+      <a href="https://example.com/apply-node" class="apply-btn">Apply</a>
+    </div>
+
+    <div class="service-card">
+      <h3>HTML & CSS</h3>
+      <p>Build beautiful and responsive websites.</p>
+      <a href="https://example.com/apply-htmlcss" class="apply-btn">Apply</a>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="service-card">
+      <h3>Verbal & Communication</h3>
+      <p>Improve confidence, speaking, and interviews.</p>
+      <a href="https://example.com/apply-communication" class="apply-btn">Apply</a>
+    </div>
+
+    <!-- Social Media -->
+    <div class="service-card">
+      <h3>YouTube Growth</h3>
+      <p>Content strategy, monetization & growth.</p>
+      <a href="https://example.com/apply-youtube" class="apply-btn">Apply</a>
+    </div>
+
+    <div class="service-card">
+      <h3>Instagram Growth</h3>
+      <p>Increase followers, reach, and engagement.</p>
+      <a href="https://example.com/apply-instagram" class="apply-btn">Apply</a>
     </div>
   </div>
 </section>
 
+<!-- FOUNDERS -->
+<section id="founders">
+  <h2>OUR FOUNDERS</h2>
 
+  <div class="services">
+    <div class="service-card founder-card">
+      <img src="images/founder.jpg" alt="Founder">
+      <h3>Founder & CEO</h3>
+      <p>Visionary leader driving innovation and growth.</p>
+    </div>
+
+    <div class="service-card founder-card">
+      <img src="images/cofounder.jpg" alt="Co-Founder">
+      <h3>Co-Founder</h3>
+      <p>Technology and strategy specialist.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
   <h2>CONTACT US</h2>
 
@@ -280,33 +135,20 @@
     <button type="submit">Send Message</button>
   </form>
 
-  <p id="thankyou-message" style="display:none; margin-top:2rem; color:#22c55e; font-size:1.2rem; font-weight:600;">
+  <p id="thankyou-message" class="thankyou">
     Thank you. Your message is successfully sent.
   </p>
 </section>
 
 <footer>
-  <h1 style="color:#f97316;">NextZen Technos</h1>
+  <h1>NextZen Technos</h1>
   <p>Connect. Learn. Build. Lead.</p>
 
-  <div class="footer-social">
-    <a class="wa" href="https://wa.me/919876543210" target="_blank">💬 WhatsApp</a>
-    <a class="ig" href="https://www.instagram.com/nextzentechnos" target="_blank">📸 Instagram</a>
-    <a class="li" href="https://www.linkedin.com/company/nextzentechnos" target="_blank">💼 LinkedIn</a>
-    <a class="call" href="tel:+919876543210">📞 Call Us</a>
-  </div>
-
-  <p style="margin-top:2rem; font-size:0.85rem;">© 2025 NextZen Technos</p>
+  <p class="copyright">© 2025 NextZen Technos</p>
 </footer>
 
-<script>
-function showThankYou() {
-  setTimeout(() => {
-    document.querySelector(".contact-form").style.display = "none";
-    document.getElementById("thankyou-message").style.display = "block";
-  }, 500);
-}
-</script>
+<!-- JS -->
+<script src="script.js"></script>
 
 </body>
 </html>
