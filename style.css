@@ -520,4 +520,17 @@ footer {
     resize: none;
   }
 }
+@media (max-width: 768px) {
+
+  .founder-social {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .founder-social .social-btn {
+    width: 100%;
+    max-width: 240px;
+    justify-content: center;
+  }
+}
 
