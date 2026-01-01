@@ -131,9 +131,43 @@ p {
   color: #22c55e;
 }
 
-/* FOOTER */
-footer {
-  border-top: 1px solid #1e293b;
-  padding: 3rem 2rem;
-  text-align: center;
+/* FOOTER SOCIAL BUTTONS */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.8rem;
+}
+
+.social-btn {
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-btn:hover {
+  transform: translateY(-4px);
+  opacity: 0.9;
+}
+
+/* Platform Colors */
+.wa {
+  background: #22c55e;
+  color: #020617;
+}
+
+.ig {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+  color: #fff;
+}
+
+.li {
+  background: #2563eb;
+  color: #fff;
 }
