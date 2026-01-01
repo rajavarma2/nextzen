@@ -190,3 +190,7 @@ footer {
   text-align: center;
   color: #94a3b8;
 }
+
+#events .service-card {
+  border-left: 4px solid #f97316;
+}
