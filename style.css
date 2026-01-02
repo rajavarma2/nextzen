@@ -579,3 +579,42 @@ footer {
   }
 }
 
+.freelance-section {
+  padding: 80px 20px;
+  background: #f9fafc;
+  text-align: center;
+}
+
+.freelance-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.freelance-section h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+.freelance-section p {
+  font-size: 16px;
+  color: #475569;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.freelance-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.freelance-btn:hover {
+  background: #1d4ed8;
+}
